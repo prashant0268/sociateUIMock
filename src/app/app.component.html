@@ -1,0 +1,1540 @@
+<div class="header">
+
+</div>
+<div class="flex-container">
+  <div class="flex-1"></div>
+
+  <div class="left-panel">
+    <!--<div class="user-profile">-->
+    <!--</div>-->
+    <div class="widget-job-opportunities">
+      <div style="margin-bottom: 0px;text-align: center;padding: 20px 0px;border-bottom: 1px solid gray;font-size: 20px;font-family: sans-serif;color: white;background: #1d71af;">
+        Trending News
+      </div>
+      <md-list>
+        <md-list-item class="li-trending-news" *ngFor="let nl of newsListing"><a target="_blank" href="{{nl.url}}">{{nl.description}}</a></md-list-item>
+      </md-list>
+    </div>
+  </div>
+  <div class="center-panel">
+    <md-tab-group>
+      <md-tab>
+        <ng-template md-tab-label>
+          <i class="fa fa-mortar-board tab-icon" style="font-size:30px;"></i>
+          <div class="tab-content">
+            explore opportunities
+          </div>
+        </ng-template>
+        <div class="job-container">
+          <div class="filters">
+            <a href="#">All</a>
+            <a href="#" class="active">IT Software</a>
+            <a href="#">HR</a>
+            <a href="#">Marketing</a>
+            <a href="#">Production</a>
+            <a href="#">Sales</a>
+          </div>
+          <div class="selected-filers">
+            <md-chip-list>
+              <md-chip> Sales <i class="fa fa-times"></i></md-chip>
+            </md-chip-list>
+          </div>
+          <div class="post-row">
+            <div class="flex-container" style="padding: 15px 24px;">
+              <div class="flex-1">
+                <div class="flex-container">
+                  <div class="profile-pic">
+                    <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                  </div>
+                  <div class="flex-1">
+                    <md-input-container class="full-width">
+                      <textarea mdInput minRows="2" placeholder="Job Description"></textarea>
+                    </md-input-container>
+                    <div class="flex-container">
+
+                    </div>
+                    <md-input-container class="full-width">
+                      <input mdInput placeholder="URL" value="">
+                    </md-input-container>
+                    <div class="flex-container">
+                      <div class="flex-1">
+                        <md-input-container class="full-width">
+                          <input mdInput placeholder="Title" value="">
+                        </md-input-container>
+                      </div>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <div class="flex-1">
+                        <md-select multiple style="display:block;    margin-top: 14px;" placeholder="Job Function">
+                          <md-optgroup label="Tags">
+                            <md-option >Technology</md-option>
+                            <md-option >Consulting</md-option>
+                            <md-option >Marketing</md-option>
+                            <md-option >Finance</md-option>
+                            <md-option >General Management</md-option>
+                            <md-option >Technology</md-option>
+                            <md-option >Consulting</md-option>
+                            <md-option >Marketing</md-option>
+                            <md-option >Finance</md-option>
+                            <md-option >General Management</md-option>
+                            <md-option >Technology</md-option>
+                            <md-option >Consulting</md-option>
+                            <md-option >Marketing</md-option>
+                            <md-option >Finance</md-option>
+                            <md-option >General Management</md-option>
+                          </md-optgroup>
+                        </md-select>
+                      </div>
+                      &nbsp;&nbsp;&nbsp;&nbsp;
+                      <div class="flex-1">
+                        <md-select multiple style="display:block;    margin-top: 14px;" placeholder="Industry">
+                          <md-optgroup label="Tags">
+                            <md-option >Technology</md-option>
+                            <md-option >Consulting</md-option>
+                            <md-option >Marketing</md-option>
+                            <md-option >Finance</md-option>
+                            <md-option >General Management</md-option>
+                            <md-option >Technology</md-option>
+                            <md-option >Consulting</md-option>
+                            <md-option >Marketing</md-option>
+                            <md-option >Finance</md-option>
+                            <md-option >General Management</md-option>
+                            <md-option >Technology</md-option>
+                            <md-option >Consulting</md-option>
+                            <md-option >Marketing</md-option>
+                            <md-option >Finance</md-option>
+                            <md-option >General Management</md-option>
+                          </md-optgroup>
+                        </md-select>
+                      </div>
+                    </div>
+                    <div class="flex-container">
+                      <div class="flex-1">
+                        <md-input-container class="full-width">
+                          <input mdInput placeholder="Address" value="">
+                        </md-input-container>
+                      </div>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <div class="flex-1">
+                        <md-input-container class="full-width">
+                          <input mdInput placeholder="City" value="">
+                        </md-input-container>
+                      </div>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <div class="flex-1">
+                        <md-input-container class="full-width">
+                          <input mdInput placeholder="State" value="">
+                        </md-input-container>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="post-footer"style="padding: 15px 24px; border-top: 1px solid lightgray;    background: ghostwhite;">
+              <div class="post-button-container" style="text-align:right;">
+                <button md-button style="background:orange;color: white;"><span>POST JOB</span></button>
+              </div>
+            </div>
+          </div>
+          <md-card class="feed-card">
+            <md-card-header class="lr-padding-24">
+              <div md-card-avatar class="feed-header-image">
+                <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/large_user/public/staceygheadshot.jpg?itok=HMkWAqBZ">
+              </div>
+              <md-card-title>
+                <span class="name">Nicole Bouchard</span>
+                <span class="university">NYU Stern</span>
+                <span class="year">'14</span>
+              </md-card-title>
+              <md-card-subtitle>Management & Strategy, Marketing</md-card-subtitle>
+              <div class="side-menu">
+                <button md-icon-button [mdMenuTriggerFor]="menu">
+                  <i class="material-icons">more_vert</i>
+                  <!--<md-icon>more_vert</md-icon>-->
+                </button>
+                <md-menu #menu="mdMenu">
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Hide Post</span>
+                  </button>
+                  <button md-menu-item disabled>
+                    <i class="material-icons">more_vert</i>
+                    <span>Report Post</span>
+                  </button>
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Unfollow Pallav</span>
+                  </button>
+                </md-menu>
+              </div>
+            </md-card-header>
+            <md-card-content class="lr-padding-24">
+              <p>
+                Crozier is hiring! Looking for Senior Account Manager among other roles. Great for someone with background in the arts or luxury sector.
+              </p>
+              <a href="https://www.crozierarts.com/about/careers">https://www.crozierarts.com/about/careers</a>
+              <div class="time-ago">6 days ago</div>
+            </md-card-content>
+            <md-card-actions class="lr-padding-24 mar-bot-0">
+              <button md-button><i class="fa fa-heart" aria-hidden="true"></i> <span class="action-count">23</span></button>
+              <button md-button><i class="fa fa-comment" aria-hidden="true"></i> <span class="action-count">12</span></button>
+            </md-card-actions>
+
+            <md-card-content class="comment-container">
+              <div class="flex-container previous-comment-container">
+                <div class="flex-2">View Previous Comments</div>
+                <div class="flex-1 text-right">2 of 12</div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur</span>
+                  </div>
+                  <div class="comment-date">
+                    5 days ago
+                  </div>
+
+                </div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur</span>
+                  </div>
+                  <div class="comment-date">
+                    2 days ago
+                  </div>
+                </div>
+              </div>
+              <div class="add-comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <md-input-container class="full-width">
+                      <input mdInput placeholder="Write a comment .." value="">
+                    </md-input-container>
+                  </div>
+                </div>
+              </div>
+            </md-card-content>
+          </md-card>
+          <md-card class="feed-card">
+            <md-card-header class="lr-padding-24">
+              <div md-card-avatar class="feed-header-image">
+                <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/large_user/public/staceygheadshot.jpg?itok=HMkWAqBZ">
+              </div>
+              <md-card-title>
+                <span class="name">Nicole Bouchard</span>
+                <span class="university">NYU Stern</span>
+                <span class="year">'14</span>
+              </md-card-title>
+              <md-card-subtitle>Management & Strategy, Marketing</md-card-subtitle>
+              <div class="side-menu">
+                <button md-icon-button [mdMenuTriggerFor]="menu">
+                  <i class="material-icons">more_vert</i>
+                  <!--<md-icon>more_vert</md-icon>-->
+                </button>
+                <md-menu #menu="mdMenu">
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Hide Post</span>
+                  </button>
+                  <button md-menu-item disabled>
+                    <i class="material-icons">more_vert</i>
+                    <span>Report Post</span>
+                  </button>
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Unfollow Pallav</span>
+                  </button>
+                </md-menu>
+              </div>
+            </md-card-header>
+            <md-card-content class="lr-padding-24">
+              <p>
+                Crozier is hiring! Looking for Senior Account Manager among other roles. Great for someone with background in the arts or luxury sector.
+              </p>
+              <a href="https://www.crozierarts.com/about/careers">https://www.crozierarts.com/about/careers</a>
+              <div class="time-ago">6 days ago</div>
+            </md-card-content>
+            <md-card-actions class="lr-padding-24 mar-bot-0">
+              <button md-button><i class="fa fa-heart" aria-hidden="true"></i> <span class="action-count">23</span></button>
+              <button md-button><i class="fa fa-comment" aria-hidden="true"></i> <span class="action-count">12</span></button>
+            </md-card-actions>
+
+            <md-card-content class="comment-container">
+              <div class="flex-container previous-comment-container">
+                <div class="flex-2">View Previous Comments</div>
+                <div class="flex-1 text-right">2 of 12</div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur</span>
+                  </div>
+                  <div class="comment-date">
+                    5 days ago
+                  </div>
+
+                </div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur</span>
+                  </div>
+                  <div class="comment-date">
+                    2 days ago
+                  </div>
+                </div>
+              </div>
+              <div class="add-comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <md-input-container class="full-width">
+                      <input mdInput placeholder="Write a comment .." value="">
+                    </md-input-container>
+                  </div>
+                </div>
+              </div>
+            </md-card-content>
+          </md-card>
+          <md-card class="feed-card">
+            <md-card-header class="lr-padding-24">
+              <div md-card-avatar class="feed-header-image">
+                <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/large_user/public/staceygheadshot.jpg?itok=HMkWAqBZ">
+              </div>
+              <md-card-title>
+                <span class="name">Nicole Bouchard</span>
+                <span class="university">NYU Stern</span>
+                <span class="year">'14</span>
+              </md-card-title>
+              <md-card-subtitle>Management & Strategy, Marketing</md-card-subtitle>
+              <div class="side-menu">
+                <button md-icon-button [mdMenuTriggerFor]="menu">
+                  <i class="material-icons">more_vert</i>
+                  <!--<md-icon>more_vert</md-icon>-->
+                </button>
+                <md-menu #menu="mdMenu">
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Hide Post</span>
+                  </button>
+                  <button md-menu-item disabled>
+                    <i class="material-icons">more_vert</i>
+                    <span>Report Post</span>
+                  </button>
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Unfollow Pallav</span>
+                  </button>
+                </md-menu>
+              </div>
+            </md-card-header>
+            <md-card-content class="lr-padding-24">
+              <p>
+                Crozier is hiring! Looking for Senior Account Manager among other roles. Great for someone with background in the arts or luxury sector.
+              </p>
+              <a href="https://www.crozierarts.com/about/careers">https://www.crozierarts.com/about/careers</a>
+              <div class="time-ago">6 days ago</div>
+            </md-card-content>
+            <md-card-actions class="lr-padding-24 mar-bot-0">
+              <button md-button><i class="fa fa-heart" aria-hidden="true"></i> <span class="action-count">23</span></button>
+              <button md-button><i class="fa fa-comment" aria-hidden="true"></i> <span class="action-count">12</span></button>
+            </md-card-actions>
+
+            <md-card-content class="comment-container">
+              <div class="flex-container previous-comment-container">
+                <div class="flex-2">View Previous Comments</div>
+                <div class="flex-1 text-right">2 of 12</div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur</span>
+                  </div>
+                  <div class="comment-date">
+                    5 days ago
+                  </div>
+
+                </div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur</span>
+                  </div>
+                  <div class="comment-date">
+                    2 days ago
+                  </div>
+                </div>
+              </div>
+              <div class="add-comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <md-input-container class="full-width">
+                      <input mdInput placeholder="Write a comment .." value="">
+                    </md-input-container>
+                  </div>
+                </div>
+              </div>
+            </md-card-content>
+          </md-card>
+          <md-card class="feed-card">
+            <md-card-header class="lr-padding-24">
+              <div md-card-avatar class="feed-header-image">
+                <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/large_user/public/staceygheadshot.jpg?itok=HMkWAqBZ">
+              </div>
+              <md-card-title>
+                <span class="name">Nicole Bouchard</span>
+                <span class="university">NYU Stern</span>
+                <span class="year">'14</span>
+              </md-card-title>
+              <md-card-subtitle>Management & Strategy, Marketing</md-card-subtitle>
+              <div class="side-menu">
+                <button md-icon-button [mdMenuTriggerFor]="menu">
+                  <i class="material-icons">more_vert</i>
+                  <!--<md-icon>more_vert</md-icon>-->
+                </button>
+                <md-menu #menu="mdMenu">
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Hide Post</span>
+                  </button>
+                  <button md-menu-item disabled>
+                    <i class="material-icons">more_vert</i>
+                    <span>Report Post</span>
+                  </button>
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Unfollow Pallav</span>
+                  </button>
+                </md-menu>
+              </div>
+            </md-card-header>
+            <md-card-content class="lr-padding-24">
+              <p>
+                Crozier is hiring! Looking for Senior Account Manager among other roles. Great for someone with background in the arts or luxury sector.
+              </p>
+              <a href="https://www.crozierarts.com/about/careers">https://www.crozierarts.com/about/careers</a>
+              <div class="time-ago">6 days ago</div>
+            </md-card-content>
+            <md-card-actions class="lr-padding-24 mar-bot-0">
+              <button md-button><i class="fa fa-heart" aria-hidden="true"></i> <span class="action-count">23</span></button>
+              <button md-button><i class="fa fa-comment" aria-hidden="true"></i> <span class="action-count">12</span></button>
+            </md-card-actions>
+
+            <md-card-content class="comment-container">
+              <div class="flex-container previous-comment-container">
+                <div class="flex-2">View Previous Comments</div>
+                <div class="flex-1 text-right">2 of 12</div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur</span>
+                  </div>
+                  <div class="comment-date">
+                    5 days ago
+                  </div>
+
+                </div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur</span>
+                  </div>
+                  <div class="comment-date">
+                    2 days ago
+                  </div>
+                </div>
+              </div>
+              <div class="add-comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <md-input-container class="full-width">
+                      <input mdInput placeholder="Write a comment .." value="">
+                    </md-input-container>
+                  </div>
+                </div>
+              </div>
+            </md-card-content>
+          </md-card>
+          <md-card class="feed-card">
+            <md-card-header class="lr-padding-24">
+              <div md-card-avatar class="feed-header-image">
+                <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/large_user/public/staceygheadshot.jpg?itok=HMkWAqBZ">
+              </div>
+              <md-card-title>
+                <span class="name">Nicole Bouchard</span>
+                <span class="university">NYU Stern</span>
+                <span class="year">'14</span>
+              </md-card-title>
+              <md-card-subtitle>Management & Strategy, Marketing</md-card-subtitle>
+              <div class="side-menu">
+                <button md-icon-button [mdMenuTriggerFor]="menu">
+                  <i class="material-icons">more_vert</i>
+                  <!--<md-icon>more_vert</md-icon>-->
+                </button>
+                <md-menu #menu="mdMenu">
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Hide Post</span>
+                  </button>
+                  <button md-menu-item disabled>
+                    <i class="material-icons">more_vert</i>
+                    <span>Report Post</span>
+                  </button>
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Unfollow Pallav</span>
+                  </button>
+                </md-menu>
+              </div>
+            </md-card-header>
+            <md-card-content class="lr-padding-24">
+              <p>
+                Crozier is hiring! Looking for Senior Account Manager among other roles. Great for someone with background in the arts or luxury sector.
+              </p>
+              <a href="https://www.crozierarts.com/about/careers">https://www.crozierarts.com/about/careers</a>
+              <div class="time-ago">6 days ago</div>
+            </md-card-content>
+            <md-card-actions class="lr-padding-24 mar-bot-0">
+              <button md-button><i class="fa fa-heart" aria-hidden="true"></i> <span class="action-count">23</span></button>
+              <button md-button><i class="fa fa-comment" aria-hidden="true"></i> <span class="action-count">12</span></button>
+            </md-card-actions>
+
+            <md-card-content class="comment-container">
+              <div class="flex-container previous-comment-container">
+                <div class="flex-2">View Previous Comments</div>
+                <div class="flex-1 text-right">2 of 12</div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur</span>
+                  </div>
+                  <div class="comment-date">
+                    5 days ago
+                  </div>
+
+                </div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur</span>
+                  </div>
+                  <div class="comment-date">
+                    2 days ago
+                  </div>
+                </div>
+              </div>
+              <div class="add-comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <md-input-container class="full-width">
+                      <input mdInput placeholder="Write a comment .." value="">
+                    </md-input-container>
+                  </div>
+                </div>
+              </div>
+            </md-card-content>
+          </md-card>
+          <div class="load-more-container">
+            <button md-raised-button>Load More</button>
+          </div>
+
+        </div>
+      </md-tab>
+      <md-tab>
+        <ng-template md-tab-label>
+          <i class="fa fa-list-alt tab-icon" style="font-size:30px;"></i>
+          <div class="tab-content">
+            browse forum
+          </div>
+        </ng-template>
+        <div class="forum-container">
+          <div class="filters">
+            <a href="#">All</a>
+            <a href="#" class="active">Technology <i class="fa fa-caret-down"></i></a>
+            <a href="#">Consulting <i class="fa fa-caret-down"></i></a>
+            <a href="#">Marketing <i class="fa fa-caret-down"></i></a>
+            <a href="#">Finance <i class="fa fa-caret-down"></i></a>
+            <a href="#">General Management <i class="fa fa-caret-down"></i></a>
+          </div>
+          <div class="selected-filers">
+            <md-chip-list>
+              <md-chip> Technology <i class="fa fa-times"></i></md-chip>
+            </md-chip-list>
+          </div>
+          <div class="post-row">
+            <div class="flex-container" style="padding: 15px 24px;">
+              <div class="flex-1">
+                <div class="flex-container">
+                  <div class="profile-pic">
+                    <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                  </div>
+                  <div class="flex-1">
+                    <md-input-container class="full-width">
+                      <textarea mdInput minRows="2" placeholder="Whats happening?"></textarea>
+                    </md-input-container>
+                  </div>
+                </div>
+                <div class="flex-container">
+                  <div style="width:60px;color: #666;padding-top: 5px;">
+                    Tags :
+                  </div>
+                  <div style="width:300px;">
+                    <md-select multiple style="display:block;" >
+                      <md-optgroup label="Tags">
+                        <md-option >Technology</md-option>
+                        <md-option >Consulting</md-option>
+                        <md-option >Marketing</md-option>
+                        <md-option >Finance</md-option>
+                        <md-option >General Management</md-option>
+                        <md-option >Technology</md-option>
+                        <md-option >Consulting</md-option>
+                        <md-option >Marketing</md-option>
+                        <md-option >Finance</md-option>
+                        <md-option >General Management</md-option>
+                        <md-option >Technology</md-option>
+                        <md-option >Consulting</md-option>
+                        <md-option >Marketing</md-option>
+                        <md-option >Finance</md-option>
+                        <md-option >General Management</md-option>
+                      </md-optgroup>
+                    </md-select>
+                  </div>
+                  <div class="flex-1">
+                    <div style="text-align: right;">
+                      <button md-button style="background:rgba(0, 108, 255, 0.68);color: white; min-width:40px;">
+                        <i class="fa fa-image"></i>
+                      </button>
+                      <button md-button style="background:rgba(0, 108, 255, 0.68);color: white; min-width:40px;">
+                        <i class="fa fa-file-pdf-o"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="post-footer"style="padding: 15px 24px; border-top: 1px solid lightgray;    background: ghostwhite;">
+              <div class="post-button-container" style="text-align:right;">
+                <md-slide-toggle class="anonymous-container">Post as anonymous</md-slide-toggle>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button md-button style="background:orange;color: white;"><span>POST</span></button>
+              </div>
+            </div>
+          </div>
+          <md-card class="feed-card">
+            <md-card-header class="lr-padding-24">
+              <div md-card-avatar class="feed-header-image">
+                <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/large_user/public/staceygheadshot.jpg?itok=HMkWAqBZ">
+              </div>
+              <md-card-title>
+                <span class="name">Stacey Goldberg</span>
+                <span class="university">NYU Stern</span>
+                <span class="year">'14</span>
+              </md-card-title>
+              <md-card-subtitle>Management & Strategy, Marketing</md-card-subtitle>
+              <div class="side-menu">
+                <button md-icon-button [mdMenuTriggerFor]="menu">
+                  <i class="material-icons">more_vert</i>
+                  <!--<md-icon>more_vert</md-icon>-->
+                </button>
+                <md-menu #menu="mdMenu">
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Hide Post</span>
+                  </button>
+                  <button md-menu-item disabled>
+                    <i class="material-icons">more_vert</i>
+                    <span>Report Post</span>
+                  </button>
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Unfollow Pallav</span>
+                  </button>
+                </md-menu>
+              </div>
+            </md-card-header>
+            <md-card-content class="lr-padding-24">
+              <p>
+                Hi Everyone! Thanks to Marci for showing me this community of amazing Sternies! Just a few things to throw out there as an intro.
+                I run a botique wealth management firm for Millennials, young professionals and entrepreneurs called Bone Fide
+                <span class="more-less-button">... more</span><span class="more-less" style="display:none">Wealth, LLC (www.bonefidewealth.com). So if anyone has any questions about..</span>
+              </p>
+              <div class="time-ago">6 days ago</div>
+            </md-card-content>
+            <md-card-content class="lr-padding-24 mar-bot-0">
+              <md-chip-list>
+                <md-chip>Luxury Marketing</md-chip>
+                <md-chip>Account Development</md-chip>
+                <md-chip>Job Opportunity</md-chip>
+              </md-chip-list>
+            </md-card-content>
+
+            <div class="actions">
+              <md-card-actions class="lr-padding-24 mar-bot-0">
+                <button md-button><i class="fa fa-heart" aria-hidden="true" style="color: crimson;"></i> <span class="action-count" style="color: crimson;">23</span></button>
+                <button md-button><i class="fa fa-comment" aria-hidden="true"></i> <span class="action-count">12</span></button>
+                <button md-button class="comment-show-hide"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+              </md-card-actions>
+            </div>
+
+            <md-card-content class="comment-container">
+              <div class="flex-container previous-comment-container">
+                <div class="flex-2">View Previous Comments</div>
+                <div class="flex-1 text-right">2 of 12</div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav
+                    KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur<span class="more-less-button">... more</span></span>
+                  </div>
+                  <div class="comment-date">
+                    5 days ago
+                  </div>
+
+                </div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur</span>
+                  </div>
+                  <div class="comment-date">
+                    2 days ago
+                  </div>
+                </div>
+              </div>
+              <div class="add-comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <md-input-container class="full-width">
+                      <input mdInput placeholder="Write a comment .." value="">
+                    </md-input-container>
+                  </div>
+                </div>
+              </div>
+            </md-card-content>
+          </md-card>
+          <md-card class="feed-card">
+            <md-card-header class="lr-padding-24">
+              <div md-card-avatar class="feed-header-image">
+                <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/large_user/public/staceygheadshot.jpg?itok=HMkWAqBZ">
+              </div>
+              <md-card-title>
+                <span class="name">Stacey Goldberg</span>
+                <span class="university">NYU Stern</span>
+                <span class="year">'14</span>
+              </md-card-title>
+              <md-card-subtitle>Management & Strategy, Marketing</md-card-subtitle>
+              <div class="side-menu">
+                <button md-icon-button [mdMenuTriggerFor]="menu">
+                  <i class="material-icons">more_vert</i>
+                  <!--<md-icon>more_vert</md-icon>-->
+                </button>
+                <md-menu #menu="mdMenu">
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Hide Post</span>
+                  </button>
+                  <button md-menu-item disabled>
+                    <i class="material-icons">more_vert</i>
+                    <span>Report Post</span>
+                  </button>
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Unfollow Pallav</span>
+                  </button>
+                </md-menu>
+              </div>
+            </md-card-header>
+            <md-card-content class="lr-padding-24">
+              <p>
+                Hi Everyone! Thanks to Marci for showing me this community of amazing Sternies!
+              </p>
+              <img style="    max-width: 740px;" src="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=xGiUj%2BmdPLdCh1JtHCk9uNgSTxA%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta9Er0Vinkhwfjw8177yE41y87UNCVordEGXyD3u0qYrdf3HsKsDYLeDzuVwefn4clFc7ePL6RjfoD5S1Ktvvftp03Zfhdo24ZxUBbFI8lWxI" />
+              <div class="time-ago" style="margin-top:10px;">6 days ago</div>
+            </md-card-content>
+            <md-card-content class="lr-padding-24 mar-bot-0">
+              <md-chip-list>
+                <md-chip>Luxury Marketing</md-chip>
+                <md-chip>Account Development</md-chip>
+                <md-chip>Job Opportunity</md-chip>
+              </md-chip-list>
+            </md-card-content>
+
+            <md-card-actions class="lr-padding-24 mar-bot-0">
+              <button md-button><i class="fa fa-heart" aria-hidden="true"></i> <span class="action-count">23</span></button>
+              <button md-button><i class="fa fa-comment" aria-hidden="true"></i> <span class="action-count">12</span></button>
+              <button md-button class="comment-show-hide"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+            </md-card-actions>
+
+            <md-card-content class="comment-container">
+              <div class="flex-container previous-comment-container">
+                <div class="flex-2">View Previous Comments</div>
+                <div class="flex-1 text-right">2 of 12</div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur</span>
+                  </div>
+                  <div class="comment-date">
+                    5 days ago
+                  </div>
+
+                </div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur</span>
+                  </div>
+                  <div class="comment-date">
+                    2 days ago
+                  </div>
+                </div>
+              </div>
+              <div class="add-comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <md-input-container class="full-width">
+                      <input mdInput placeholder="Write a comment .." value="">
+                    </md-input-container>
+                  </div>
+                </div>
+              </div>
+            </md-card-content>
+          </md-card>
+          <md-card class="feed-card">
+            <md-card-header class="lr-padding-24">
+              <div md-card-avatar class="feed-header-image">
+                <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/large_user/public/staceygheadshot.jpg?itok=HMkWAqBZ">
+              </div>
+              <md-card-title>
+                <span class="name">Stacey Goldberg</span>
+                <span class="university">NYU Stern</span>
+                <span class="year">'14</span>
+              </md-card-title>
+              <md-card-subtitle>Management & Strategy, Marketing</md-card-subtitle>
+              <div class="side-menu">
+                <button md-icon-button [mdMenuTriggerFor]="menu">
+                  <i class="material-icons">more_vert</i>
+                  <!--<md-icon>more_vert</md-icon>-->
+                </button>
+                <md-menu #menu="mdMenu">
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Hide Post</span>
+                  </button>
+                  <button md-menu-item disabled>
+                    <i class="material-icons">more_vert</i>
+                    <span>Report Post</span>
+                  </button>
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Unfollow Pallav</span>
+                  </button>
+                </md-menu>
+              </div>
+            </md-card-header>
+            <md-card-content class="lr-padding-24">
+              <p>
+                Checkout this amazing article at <span style="color:dodgerblue">https://www.yahoo.com/news/subway-store-sues-worker-cleared-drugging-officer-222002650.html</span>.
+              </p>
+              <div class="link-container">
+                <div class="link-image">
+                  <img src="https://s.yimg.com/lo/api/res/1.2/nvMjSVREWREbZyJ5gol8zg--/YXBwaWQ9eW15O3E9NzU7dz02NDA7c209MTtpbD1wbGFuZQ--/http://l.yimg.com/os/creatr-images/GLB/2017-08-09/09f3eaa0-7d52-11e7-a50a-d1d70077b419_sb.jpg"/>
+                </div>
+                <div style="font-size: 20px;padding: 10px 0px;color: darkblue;">
+                  Subway store sues after worker cleared of drugging officer
+                </div>
+                <div style="    background: white;display: -webkit-inline-box;padding: 5px 10px;font-size: 17px;text-decoration: underline;color: dodgerblue;">
+                  yahoo.com
+                </div>
+              </div>
+              <div class="time-ago">6 days ago</div>
+            </md-card-content>
+            <md-card-content class="lr-padding-24 mar-bot-0">
+              <md-chip-list>
+                <md-chip>Luxury Marketing</md-chip>
+                <md-chip>Account Development</md-chip>
+                <md-chip>Job Opportunity</md-chip>
+              </md-chip-list>
+            </md-card-content>
+
+            <md-card-actions class="lr-padding-24 mar-bot-0">
+              <button md-button><i class="fa fa-heart" aria-hidden="true"></i> <span class="action-count">23</span></button>
+              <button md-button><i class="fa fa-comment" aria-hidden="true"></i> <span class="action-count">12</span></button>
+              <button md-button class="comment-show-hide"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+            </md-card-actions>
+
+            <md-card-content class="comment-container">
+              <div class="flex-container previous-comment-container">
+                <div class="flex-2">View Previous Comments</div>
+                <div class="flex-1 text-right">2 of 12</div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur</span>
+                  </div>
+                  <div class="comment-date">
+                    5 days ago
+                  </div>
+
+                </div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur</span>
+                  </div>
+                  <div class="comment-date">
+                    2 days ago
+                  </div>
+                </div>
+              </div>
+              <div class="add-comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <md-input-container class="full-width">
+                      <input mdInput placeholder="Write a comment .." value="">
+                    </md-input-container>
+                  </div>
+                </div>
+              </div>
+            </md-card-content>
+          </md-card>
+          <md-card class="feed-card">
+            <md-card-header class="lr-padding-24">
+              <div md-card-avatar class="feed-header-image">
+                <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/large_user/public/staceygheadshot.jpg?itok=HMkWAqBZ">
+              </div>
+              <md-card-title>
+                <span class="name">Stacey Goldberg</span>
+                <span class="university">NYU Stern</span>
+                <span class="year">'14</span>
+              </md-card-title>
+              <md-card-subtitle>Management & Strategy, Marketing</md-card-subtitle>
+              <div class="side-menu">
+                <button md-icon-button [mdMenuTriggerFor]="menu">
+                  <i class="material-icons">more_vert</i>
+                  <!--<md-icon>more_vert</md-icon>-->
+                </button>
+                <md-menu #menu="mdMenu">
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Hide Post</span>
+                  </button>
+                  <button md-menu-item disabled>
+                    <i class="material-icons">more_vert</i>
+                    <span>Report Post</span>
+                  </button>
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Unfollow Pallav</span>
+                  </button>
+                </md-menu>
+              </div>
+            </md-card-header>
+            <md-card-content class="lr-padding-24">
+              <p>
+                Hi Everyone! Thanks to Marci for showing me this community of amazing Sternies! Just a few things to throw out there as an intro.
+                I run a botique wealth management firm for Millennials, young professionals and entrepreneurs called Bone Fide Wealth,
+                LLC (www.bonefidewealth.com). So if anyone has any questions about..
+              </p>
+              <div class="time-ago">6 days ago</div>
+            </md-card-content>
+            <md-card-content class="lr-padding-24 mar-bot-0">
+              <md-chip-list>
+                <md-chip>Luxury Marketing</md-chip>
+                <md-chip>Account Development</md-chip>
+                <md-chip>Job Opportunity</md-chip>
+              </md-chip-list>
+            </md-card-content>
+
+            <md-card-actions class="lr-padding-24 mar-bot-0">
+              <button md-button><i class="fa fa-heart" aria-hidden="true"></i> <span class="action-count">23</span></button>
+              <button md-button><i class="fa fa-comment" aria-hidden="true"></i> <span class="action-count">12</span></button>
+              <button md-button class="comment-show-hide"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+            </md-card-actions>
+
+            <md-card-content class="comment-container">
+              <div class="flex-container previous-comment-container">
+                <div class="flex-2">View Previous Comments</div>
+                <div class="flex-1 text-right">2 of 12</div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur</span>
+                  </div>
+                  <div class="comment-date">
+                    5 days ago
+                  </div>
+
+                </div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur</span>
+                  </div>
+                  <div class="comment-date">
+                    2 days ago
+                  </div>
+                </div>
+              </div>
+              <div class="add-comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <md-input-container class="full-width">
+                      <input mdInput placeholder="Write a comment .." value="">
+                    </md-input-container>
+                  </div>
+                </div>
+              </div>
+            </md-card-content>
+          </md-card>
+          <md-card class="feed-card">
+            <md-card-header class="lr-padding-24">
+              <div md-card-avatar class="feed-header-image">
+                <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/large_user/public/staceygheadshot.jpg?itok=HMkWAqBZ">
+              </div>
+              <md-card-title>
+                <span class="name">Stacey Goldberg</span>
+                <span class="university">NYU Stern</span>
+                <span class="year">'14</span>
+              </md-card-title>
+              <md-card-subtitle>Management & Strategy, Marketing</md-card-subtitle>
+              <div class="side-menu">
+                <button md-icon-button [mdMenuTriggerFor]="menu">
+                  <i class="material-icons">more_vert</i>
+                  <!--<md-icon>more_vert</md-icon>-->
+                </button>
+                <md-menu #menu="mdMenu">
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Hide Post</span>
+                  </button>
+                  <button md-menu-item disabled>
+                    <i class="material-icons">more_vert</i>
+                    <span>Report Post</span>
+                  </button>
+                  <button md-menu-item>
+                    <i class="material-icons">more_vert</i>
+                    <span>Unfollow Pallav</span>
+                  </button>
+                </md-menu>
+              </div>
+            </md-card-header>
+            <md-card-content class="lr-padding-24">
+              <p>
+                Hi Everyone! Thanks to Marci for showing me this community of amazing Sternies! Just a few things to throw out there as an intro.
+                I run a botique wealth management firm for Millennials, young professionals and entrepreneurs called Bone Fide Wealth,
+                LLC (www.bonefidewealth.com). So if anyone has any questions about..
+              </p>
+              <div class="time-ago">6 days ago</div>
+            </md-card-content>
+            <md-card-content class="lr-padding-24 mar-bot-0">
+              <md-chip-list>
+                <md-chip>Luxury Marketing</md-chip>
+                <md-chip>Account Development</md-chip>
+                <md-chip>Job Opportunity</md-chip>
+              </md-chip-list>
+            </md-card-content>
+
+            <md-card-actions class="lr-padding-24 mar-bot-0">
+              <button md-button><i class="fa fa-heart" aria-hidden="true"></i> <span class="action-count">23</span></button>
+              <button md-button><i class="fa fa-comment" aria-hidden="true"></i> <span class="action-count">12</span></button>
+            </md-card-actions>
+
+            <md-card-content class="comment-container">
+              <div class="flex-container previous-comment-container">
+                <div class="flex-2">View Previous Comments</div>
+                <div class="flex-1 text-right">2 of 12</div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur</span>
+                  </div>
+                  <div class="comment-date">
+                    5 days ago
+                  </div>
+
+                </div>
+              </div>
+              <div class="comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <span class="comment-user-name">Pallav Kapur</span><span>Pallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav KapurPallav Kapur</span>
+                  </div>
+                  <div class="comment-date">
+                    2 days ago
+                  </div>
+                </div>
+              </div>
+              <div class="add-comment-row flex-container">
+                <div class="profile-pic">
+                  <img class="mat-card-img" src="https://www.sociate.io/sites/default/files/styles/small_user/public/pallav-kapur-portrait.jpg?itok=_AC3xtQx">
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <md-input-container class="full-width">
+                      <input mdInput placeholder="Write a comment .." value="">
+                    </md-input-container>
+                  </div>
+                </div>
+              </div>
+            </md-card-content>
+          </md-card>
+          <div class="load-more-container">
+            <button md-raised-button>Load More</button>
+          </div>
+
+        </div>
+      </md-tab>
+      <md-tab>
+        <ng-template md-tab-label>
+          <i class="fa fa-group tab-icon" style="font-size:30px;"></i>
+          <div class="tab-content">
+            discover sociates
+          </div>
+        </ng-template>
+        <div class="connections-container"  style="padding: 20px 3px;">
+          <div class="flex-container" style="background: whitesmoke;">
+            <div class="flex-1" style="text-align: center;">
+              <button md-button class="full-width"  style="background-color: #81b9e2; color: white;">Discover Sociates</button>
+            </div>
+            <div>&nbsp;&nbsp;&nbsp;</div>
+            <div class="flex-1" style="text-align: center;">
+              <button md-button class="full-width">My Connections (23)</button>
+            </div>
+          </div>
+          <div class="search-sociate-container">
+            <md-input-container class="full-width">
+              <input mdInput placeholder="Search for Sociates using title, location, company, industry etc;" value="">
+            </md-input-container>
+          </div>
+          <div class="flex-container">
+            <div class="flex-1">
+              <div class="connection-user-container">
+                <div class="con-header">
+
+
+                </div>
+                <div class="con-user-pic">
+                  <img class="con-user-img" src="https://www.sociate.io/sites/default/files/styles/large_user/public/headshotb_11-04-2016.jpg?itok=xzxeRbVx">
+                </div>
+                <div class="con-body">
+                  <div class="con-actions flex-container">
+                    <button md-button style="background-color: darkseagreen; color: white;"><span>BOOKMARK</span></button>
+                    <div class="side-menu">
+                      <button md-icon-button [mdMenuTriggerFor]="menu">
+                        <i class="material-icons">more_vert</i>
+                        <!--<md-icon>more_vert</md-icon>-->
+                      </button>
+                      <md-menu #menu="mdMenu">
+                        <button md-menu-item>
+                          <i class="material-icons">more_vert</i>
+                          <span>Hide Post</span>
+                        </button>
+                        <button md-menu-item disabled>
+                          <i class="material-icons">more_vert</i>
+                          <span>Report Post</span>
+                        </button>
+                        <button md-menu-item>
+                          <i class="material-icons">more_vert</i>
+                          <span>Unfollow Pallav</span>
+                        </button>
+                      </md-menu>
+                    </div>
+                  </div>
+                  <div class="con-user-details">
+                    <div class="con-user-name">
+                      Brandon Grabowski
+                    </div>
+                    <div class="con-user-job">
+                      Director, Data Strategy at <span class="con-user-company">Viacom</span>
+                    </div>
+                    <label>Specialities:</label>
+                    <div class="con-user-specialities">
+                      Big Data, Data Analytics, Digital Marketing, Management & Strategy, Marketing, Marketing Research, Sales & Marketing
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1">
+              <div class="connection-user-container">
+                <div class="con-header">
+
+
+                </div>
+                <div class="con-user-pic">
+                  <img class="con-user-img" src="https://www.sociate.io/sites/default/files/styles/large_user/public/headshotb_11-04-2016.jpg?itok=xzxeRbVx">
+                </div>
+                <div class="con-body">
+                  <div class="con-actions flex-container">
+                    <button md-button style="background-color: darkseagreen; color: white;"><span>BOOKMARK</span></button>
+                    <div class="side-menu">
+                      <button md-icon-button [mdMenuTriggerFor]="menu">
+                        <i class="material-icons">more_vert</i>
+                        <!--<md-icon>more_vert</md-icon>-->
+                      </button>
+                      <md-menu #menu="mdMenu">
+                        <button md-menu-item>
+                          <i class="material-icons">more_vert</i>
+                          <span>Hide Post</span>
+                        </button>
+                        <button md-menu-item disabled>
+                          <i class="material-icons">more_vert</i>
+                          <span>Report Post</span>
+                        </button>
+                        <button md-menu-item>
+                          <i class="material-icons">more_vert</i>
+                          <span>Unfollow Pallav</span>
+                        </button>
+                      </md-menu>
+                    </div>
+                  </div>
+                  <div class="con-user-details">
+                    <div class="con-user-name">
+                      Brandon Grabowski
+                    </div>
+                    <div class="con-user-job">
+                      Director, Data Strategy at <span class="con-user-company">Viacom</span>
+                    </div>
+                    <label>Specialities:</label>
+                    <div class="con-user-specialities">
+                      Big Data, Data Analytics, Digital Marketing, Management & Strategy, Marketing, Marketing Research, Sales & Marketing
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-container">
+            <div class="flex-1">
+              <div class="connection-user-container">
+                <div class="con-header">
+
+
+                </div>
+                <div class="con-user-pic">
+                  <img class="con-user-img" src="https://www.sociate.io/sites/default/files/styles/large_user/public/headshotb_11-04-2016.jpg?itok=xzxeRbVx">
+                </div>
+                <div class="con-body">
+                  <div class="con-actions flex-container">
+                    <button md-button style="background-color: darkseagreen; color: white;"><span>BOOKMARK</span></button>
+                    <div class="side-menu">
+                      <button md-icon-button [mdMenuTriggerFor]="menu">
+                        <i class="material-icons">more_vert</i>
+                        <!--<md-icon>more_vert</md-icon>-->
+                      </button>
+                      <md-menu #menu="mdMenu">
+                        <button md-menu-item>
+                          <i class="material-icons">more_vert</i>
+                          <span>Hide Post</span>
+                        </button>
+                        <button md-menu-item disabled>
+                          <i class="material-icons">more_vert</i>
+                          <span>Report Post</span>
+                        </button>
+                        <button md-menu-item>
+                          <i class="material-icons">more_vert</i>
+                          <span>Unfollow Pallav</span>
+                        </button>
+                      </md-menu>
+                    </div>
+                  </div>
+                  <div class="con-user-details">
+                    <div class="con-user-name">
+                      Brandon Grabowski
+                    </div>
+                    <div class="con-user-job">
+                      Director, Data Strategy at <span class="con-user-company">Viacom</span>
+                    </div>
+                    <label>Specialities:</label>
+                    <div class="con-user-specialities">
+                      Big Data, Data Analytics, Digital Marketing, Management & Strategy, Marketing, Marketing Research, Sales & Marketing
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1">
+              <div class="connection-user-container">
+                <div class="con-header">
+
+
+                </div>
+                <div class="con-user-pic">
+                  <img class="con-user-img" src="https://www.sociate.io/sites/default/files/styles/large_user/public/headshotb_11-04-2016.jpg?itok=xzxeRbVx">
+                </div>
+                <div class="con-body">
+                  <div class="con-actions flex-container">
+                    <button md-button style="background-color: darkseagreen; color: white;"><span>BOOKMARK</span></button>
+                    <div class="side-menu">
+                      <button md-icon-button [mdMenuTriggerFor]="menu">
+                        <i class="material-icons">more_vert</i>
+                        <!--<md-icon>more_vert</md-icon>-->
+                      </button>
+                      <md-menu #menu="mdMenu">
+                        <button md-menu-item>
+                          <i class="material-icons">more_vert</i>
+                          <span>Hide Post</span>
+                        </button>
+                        <button md-menu-item disabled>
+                          <i class="material-icons">more_vert</i>
+                          <span>Report Post</span>
+                        </button>
+                        <button md-menu-item>
+                          <i class="material-icons">more_vert</i>
+                          <span>Unfollow Pallav</span>
+                        </button>
+                      </md-menu>
+                    </div>
+                  </div>
+                  <div class="con-user-details">
+                    <div class="con-user-name">
+                      Brandon Grabowski
+                    </div>
+                    <div class="con-user-job">
+                      Director, Data Strategy at <span class="con-user-company">Viacom</span>
+                    </div>
+                    <label>Specialities:</label>
+                    <div class="con-user-specialities">
+                      Big Data, Data Analytics, Digital Marketing, Management & Strategy, Marketing, Marketing Research, Sales & Marketing
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-container">
+            <div class="flex-1">
+              <div class="connection-user-container">
+                <div class="con-header">
+
+
+                </div>
+                <div class="con-user-pic">
+                  <img class="con-user-img" src="https://www.sociate.io/sites/default/files/styles/large_user/public/headshotb_11-04-2016.jpg?itok=xzxeRbVx">
+                </div>
+                <div class="con-body">
+                  <div class="con-actions flex-container">
+                    <button md-button style="background-color: darkseagreen; color: white;"><span>BOOKMARK</span></button>
+                    <div class="side-menu">
+                      <button md-icon-button [mdMenuTriggerFor]="menu">
+                        <i class="material-icons">more_vert</i>
+                        <!--<md-icon>more_vert</md-icon>-->
+                      </button>
+                      <md-menu #menu="mdMenu">
+                        <button md-menu-item>
+                          <i class="material-icons">more_vert</i>
+                          <span>Hide Post</span>
+                        </button>
+                        <button md-menu-item disabled>
+                          <i class="material-icons">more_vert</i>
+                          <span>Report Post</span>
+                        </button>
+                        <button md-menu-item>
+                          <i class="material-icons">more_vert</i>
+                          <span>Unfollow Pallav</span>
+                        </button>
+                      </md-menu>
+                    </div>
+                  </div>
+                  <div class="con-user-details">
+                    <div class="con-user-name">
+                      Brandon Grabowski
+                    </div>
+                    <div class="con-user-job">
+                      Director, Data Strategy at <span class="con-user-company">Viacom</span>
+                    </div>
+                    <label>Specialities:</label>
+                    <div class="con-user-specialities">
+                      Big Data, Data Analytics, Digital Marketing, Management & Strategy, Marketing, Marketing Research, Sales & Marketing
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1">
+              <div class="connection-user-container">
+                <div class="con-header">
+
+
+                </div>
+                <div class="con-user-pic">
+                  <img class="con-user-img" src="https://www.sociate.io/sites/default/files/styles/large_user/public/headshotb_11-04-2016.jpg?itok=xzxeRbVx">
+                </div>
+                <div class="con-body">
+                  <div class="con-actions flex-container">
+                    <button md-button style="background-color: darkseagreen; color: white;"><span>BOOKMARK</span></button>
+                    <div class="side-menu">
+                      <button md-icon-button [mdMenuTriggerFor]="menu">
+                        <i class="material-icons">more_vert</i>
+                        <!--<md-icon>more_vert</md-icon>-->
+                      </button>
+                      <md-menu #menu="mdMenu">
+                        <button md-menu-item>
+                          <i class="material-icons">more_vert</i>
+                          <span>Hide Post</span>
+                        </button>
+                        <button md-menu-item disabled>
+                          <i class="material-icons">more_vert</i>
+                          <span>Report Post</span>
+                        </button>
+                        <button md-menu-item>
+                          <i class="material-icons">more_vert</i>
+                          <span>Unfollow Pallav</span>
+                        </button>
+                      </md-menu>
+                    </div>
+                  </div>
+                  <div class="con-user-details">
+                    <div class="con-user-name">
+                      Brandon Grabowski
+                    </div>
+                    <div class="con-user-job">
+                      Director, Data Strategy at <span class="con-user-company">Viacom</span>
+                    </div>
+                    <label>Specialities:</label>
+                    <div class="con-user-specialities">
+                      Big Data, Data Analytics, Digital Marketing, Management & Strategy, Marketing, Marketing Research, Sales & Marketing
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </md-tab>
+    </md-tab-group>
+  </div>
+  <div class="right-panel">
+    <div class="widget-job-opportunities">
+      <div style="margin-bottom: 0px;text-align: center;padding: 20px 0px;border-bottom: 1px solid gray;font-size: 20px;font-family: sans-serif;color: white;background: #1d71af;">
+        Job Opportunities
+      </div>
+      <li class="li-opportunity flex-container">
+        <div class="flex-1">
+          <div class="title">Project Manager, Banking</div>
+          <div class="location">Park Hudson, New York, New York</div>
+        </div>
+      </li>
+      <li class="li-opportunity flex-container">
+        <div class="flex-1">
+          <div class="title">Project Manager, Banking</div>
+          <div class="location">Park Hudson, New York, New York</div>
+        </div>
+      </li>
+      <li class="li-opportunity flex-container">
+        <div class="flex-1">
+          <div class="title">Project Manager, Banking</div>
+          <div class="location">Park Hudson, New York, New York</div>
+        </div>
+      </li>
+      <li class="li-opportunity flex-container">
+        <div class="flex-1">
+          <div class="title">Project Manager, Banking</div>
+          <div class="location">Park Hudson, New York, New York</div>
+        </div>
+      </li>
+    </div>
+  </div>
+  <div class="flex-1"></div>
+</div>
